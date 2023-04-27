@@ -1,0 +1,33 @@
+:host {
+  /**
+   * @prop --button-padding: Padding that applies for the button
+   * @prop --button-radius: Radius for the button
+   * @prop --button-background: Background colour to use for the button
+   */
+  --button-padding: 12px;
+  --button-radius: 50%;
+  --button-background: #DEDAFA;
+}
+
+:host {
+  display: inline-block;
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}
+
+:host(:active) {
+  background: var(--button-background);
+}
+
+:host button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: auto;
+  display: inline-block;
+}
+
+:host button:active {
+  background: var(--button-background);
+}

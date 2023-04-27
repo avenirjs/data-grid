@@ -1,0 +1,71 @@
+:host {
+  /**
+   * @prop --font-family: font to use
+   * @prop --shadow-color: Colour of the shadow
+   * @prop --shadow-strength: Strength of the shadow
+   * @prop --shadow: shadow used for the `box-shadow` property of the data grid
+   * @prop --padding: padding used for the data grid
+   * @prop --radius: radius used for the `border-radius` property of the data grid
+   */
+  --font-family: sans-serif;
+  --radius: 16px;
+  --padding: 24px;
+  --shadow-color: 220 3% 15%;
+  --shadow-strength: 1%;
+  --shadow:
+    0 -1px 3px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 1px 2px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+}
+
+:host {
+  font-family: var(--font-family);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+:host .data-grid-container {
+  display: flex;
+  flex-flow: column nowrap;
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+:host ::slotted(avn-data-grid-row[heading]) {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+@media only screen and (max-width: 600px) {
+  :host {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  :host {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  :host {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :host {
+    font-size: 20px;
+  }
+}

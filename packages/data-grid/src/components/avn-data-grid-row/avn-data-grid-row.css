@@ -1,0 +1,41 @@
+:host {
+  /**
+   * @prop --row-background: Background colour for the row
+   * @prop --row-background--heading: Background colour for heading row
+   * @prop --row-padding: Padding to apply for element `<avn-data-grid-cell></avn-data-grid-cell>` within the row element
+   */
+   --row-background: #EFEDFD;
+   --row-background--heading: #ececec;
+   --row-padding: 24px;
+}
+
+:host .row-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  line-height: 1.75;
+  letter-spacing: 0.1;
+}
+
+:host([heading]) {
+  background: var(--row-background--heading);
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+:host([selected]:not([heading])) {
+  background: var(--row-background);
+}
+
+:host ::slotted(avn-data-grid-radio) {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+:host([heading]) ::slotted(avn-data-grid-cell[sortable]) {
+  --cell-alignment: center;
+}
+
+:host ::slotted(avn-data-grid-cell) {
+  padding-right: var(--row-padding);
+}

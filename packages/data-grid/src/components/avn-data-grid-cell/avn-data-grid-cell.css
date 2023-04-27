@@ -1,0 +1,38 @@
+:host {
+  /**
+   * @prop --cell-padding: Padding to apply to the cell
+   * @prop --cell-border-color: Colour to use for the border
+   * @prop --cell-alignment: Alignment for the cell
+   */
+  --cell-padding: 24px;
+  --cell-border-color: #E1E1E1;
+  --cell-alignment: flex-start;
+}
+
+:host {
+  display: flex;
+  flex: 1;
+  padding: var(--cell-padding);
+}
+
+:host([line="true"]) {
+  border-bottom: 1px solid var(--cell-border-color);
+}
+
+:host .cell-container {
+  display: flex;
+  align-items: var(--cell-alignment);
+}
+
+:host ::slotted(*) {
+  display: flex;
+  margin: auto 0;
+}
+
+:host ::slotted(avn-data-grid-radio) {
+  margin: 0 var(--cell-padding) auto;
+}
+
+:host ::slotted(avn-data-grid-checkbox) {
+  margin: 0;
+}
