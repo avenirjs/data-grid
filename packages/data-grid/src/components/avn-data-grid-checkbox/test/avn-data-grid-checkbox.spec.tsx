@@ -10,7 +10,11 @@ describe('avn-data-grid-checkbox', () => {
     expect(page.root).toEqualHtml(`
       <avn-data-grid-checkbox>
         <mock:shadow-root>
-          <slot></slot>
+        <input class="checkbox" type="checkbox">
+          <span class="checkmark"></span>
+          <label>
+            <slot></slot>
+          </label>
         </mock:shadow-root>
       </avn-data-grid-checkbox>
     `);

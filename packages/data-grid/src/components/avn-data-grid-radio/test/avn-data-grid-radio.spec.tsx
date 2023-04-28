@@ -10,7 +10,11 @@ describe('avn-data-grid-radio', () => {
     expect(page.root).toEqualHtml(`
       <avn-data-grid-radio>
         <mock:shadow-root>
-          <slot></slot>
+        <input class="radio" type="radio">
+          <span class="checkmark"></span>
+          <label>
+            <slot></slot>
+          </label>
         </mock:shadow-root>
       </avn-data-grid-radio>
     `);
