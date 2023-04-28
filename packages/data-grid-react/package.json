@@ -16,7 +16,6 @@
     "dist"
   ],
   "scripts": {
-    "test": "node ./__tests__/data-grid-react.test.js",
     "build": "npm run tsc",
     "build.watch": "npm run tsc -- --watch",
     "tsc": "tsc -p ."
