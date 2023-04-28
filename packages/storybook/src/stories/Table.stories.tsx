@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { AvnDataGrid, AvnDataGridCell, AvnDataGridCheckbox, AvnDataGridRadio, AvnDataGridRow, AvnDataGridSortingButton } from 'data-grid-react';
+import type { Meta } from '@storybook/react';
+import { AvnDataGrid, AvnDataGridCell, AvnDataGridRow } from 'data-grid-react';
 
 const meta = {
   title: 'example/Table',
@@ -13,7 +13,6 @@ const meta = {
 } satisfies Meta<typeof AvnDataGrid>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 export const Table = {
   render: ({ data }: any) => (

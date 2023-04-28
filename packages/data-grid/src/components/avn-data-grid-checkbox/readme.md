@@ -19,6 +19,16 @@
 |      | Default slot for content |
 
 
+## CSS Custom Properties
+
+| Name                              | Description                          |
+| --------------------------------- | ------------------------------------ |
+| `--checkbox-background`           | Background colour for the checkbox   |
+| `--checkbox-border-color`         | Colour to use for the border         |
+| `--checkbox-checkmark-background` | Colour to apply to the checkmark     |
+| `--checkbox-label-margin`         | Margin for the label of the checkbox |
+
+
 ## Dependencies
 
 ### Used by

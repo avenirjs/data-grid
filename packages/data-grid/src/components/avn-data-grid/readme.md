@@ -12,6 +12,18 @@
 | `mode`   | `mode`    |             | `"multi-select" \| "single-select"` | `undefined` |
 
 
+## CSS Custom Properties
+
+| Name                | Description                                                   |
+| ------------------- | ------------------------------------------------------------- |
+| `--font-family`     | font to use                                                   |
+| `--padding`         | padding used for the data grid                                |
+| `--radius`          | radius used for the `border-radius` property of the data grid |
+| `--shadow`          | shadow used for the `box-shadow` property of the data grid    |
+| `--shadow-color`    | Colour of the shadow                                          |
+| `--shadow-strength` | Strength of the shadow                                        |
+
+
 ## Dependencies
 
 ### Depends on

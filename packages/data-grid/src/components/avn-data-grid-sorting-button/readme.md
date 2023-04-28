@@ -23,6 +23,15 @@ A button component for sorting data grid columns in ascending or descending orde
 | `avnDataGridSorting` | Triggered when the button is clicked, emitting the current sorting direction. | `CustomEvent<"asc" \| "desc">` |
 
 
+## CSS Custom Properties
+
+| Name                  | Description                             |
+| --------------------- | --------------------------------------- |
+| `--button-background` | Background colour to use for the button |
+| `--button-padding`    | Padding that applies for the button     |
+| `--button-radius`     | Radius for the button                   |
+
+
 ## Dependencies
 
 ### Used by
